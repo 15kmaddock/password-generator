@@ -14,10 +14,9 @@ function generatePassword () {
   const length = prompt ('Enter your desired password length of 8 - 128 characters');
   if (length <=7) {
     window.alert ('password length not sufficient');
-    return length();
+    return length(); 
   }
 }
-
 
 
 
