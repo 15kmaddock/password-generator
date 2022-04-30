@@ -11,22 +11,9 @@ const charSymbols = symbols
 const charNumbers = numbers
 
 function generatePassword () {
-  const length = prompt ('Enter your desired password length of 8 - 128 characters');
-  if (length <=7) {
-    window.alert ('password length not sufficient');
-    return length(); 
-  }
+  var length = window.prompt
 }
-
-
-
-
-
-
-
-
-
-
+  
 
 
 const password = document.getElementById
