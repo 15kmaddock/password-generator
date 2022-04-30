@@ -1,12 +1,14 @@
 // Assignment code here
-var lChar = "qwertyuiopasdfghjkklzxcvbnm";
-var uChar = "QWERTYUIOPASDFGHJKLZXCVBNM";
+let lowercase = "qwertyuiopasdfghjkklzxcvbnm";
+var upercase = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var symbols = "!@#$%^&*_-+=";
 var numbers = "1234567890";
+var userInput = [];
+var random = [];
 
 // length paramaters for 
 function generatePassword() {
-  console.log("clicky")
+  
   var length = prompt ("Select password length from 8-128 characters.");
   if (length <=7 ) {
     alert ("password length not sufficient");
@@ -16,28 +18,31 @@ function generatePassword() {
     return length();
   };
 
-  var lChar = confirm("Would you like to include lowercase characters?")
+  var lChar = window.confirm("Would you like to include lowercase characters?")
   if (lChar) {
-    push(...lChar)
-  
+    
+    userInput.push(...lChar)
   };
     
-  var uChar = confirm("would you like to include upercase characters?")
+  var uChar = window.confirm("would you like to include upercase characters?")
   if (uChar) {
-    push(...uChar)
+    userInput.push(...uChar)
+  };
+
+  var symbols = window.confirm("Would you like to include special characters?")
+  if (symbols) {
+    userInput.push(...symbols)
+  };
+
+  var numbers = window.confirm("would you like to include numbers?")
+  if (symbols) {
+    userInput.push(...symbols)
+  };
+
+  for (var i=0; i<length; i++) {
+    randomPass.push(userInput[Math.floor(Math.random() * userInput.length)])
   }
   
-
-
-  //promt password citeria
-  //1 length
-  //2 lcase ucase # special characters
-  //validate input
-  //generate password based on criteria
-
-
-
-
 
   // display password to page
   return "generated pass will go here"
