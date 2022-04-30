@@ -1,22 +1,42 @@
 // Assignment code here
-// Array for characters
-const lchar = "qwertyuiopasdfghjklzxcvbnm";
-const uchar = "QWERTYUIOPASDFGHJKLZXCVBNM";
-const symbols = "!@#$%^&*_-+=";
-const numbers = "1234567890"
+var lChar = "qwertyuiopasdfghjkklzxcvbnm";
+var uChar = "QWERTYUIOPASDFGHJKLZXCVBNM";
+var symbols = "!@#$%^&*_-+=";
+var numbers = "1234567890";
 
-const lowercase = lchar
-const uppercase = uchar
-const charSymbols = symbols
-const charNumbers = numbers
+// length paramaters for 
+function generatePassword() {
+  console.log("clicky")
+  var length = prompt ("Select password length from 8-128 characters.");
+  if (length <=7 ) {
+    alert ("password length not sufficient");
+    return length();
+  }if (length >=129) {
+    alert("password length too long");
+    return length();
+  };
 
-function generatePassword () {
-  var length = window.prompt
-}
+  var lChar = confirm("Would you to include lowercase characters?")
+  if (lChar) [
+    userchoice.push(...lChar)
+  ];
+
   
 
 
-const password = document.getElementById
+  //promt password citeria
+  //1 length
+  //2 lcase ucase # special characters
+  //validate input
+  //generate password based on criteria
+
+
+
+
+
+  // display password to page
+  return "generated pass will go here"
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
