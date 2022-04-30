@@ -16,11 +16,16 @@ function generatePassword() {
     return length();
   };
 
-  var lChar = confirm("Would you to include lowercase characters?")
-  if (lChar) [
-    userchoice.push(...lChar)
-  ];
-
+  var lChar = confirm("Would you like to include lowercase characters?")
+  if (lChar) {
+    push(...lChar)
+  
+  };
+    
+  var uChar = confirm("would you like to include upercase characters?")
+  if (uChar) {
+    push(...uChar)
+  }
   
 
 
