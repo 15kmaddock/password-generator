@@ -23,7 +23,7 @@ if (lochar) {
     userInput.push(...lChar)
 };
 
-var upChar = confirm("Would you like to include uppercae characters?");
+var upChar = confirm("Would you like to include uppercase characters?");
 if (upChar) {
     userInput.push(...uChar)
 };
