@@ -1,9 +1,11 @@
+// Assignment code here
 var lChar = "qwertyuiopasdfghjklzxcvbnm";
 var uChar = "QWERTYUIOPASDFGHJKLZXCVBNM";
-var symbols = "!@#$%^&*-_=+";
-var numbers = "1234567890";
+var spechar = "!@#$%^&*-_=+";
+var numbs = "1234567890";
 var userInput = [];
 var randomPassword = [];
+
 
 // Get references to #generate element
 var generateBtn = document.querySelector("#generate");
@@ -16,24 +18,24 @@ if (length < 7 || length > 129) {
     return
 };
 
-var lChar = confirm("would you like to include lowercase characters?");
-if (lChar) {
-    userInput.push(lChar)
+var lochar = confirm("would you like to include lowercase characters?");
+if (lochar) {
+    userInput.push(...lChar)
 };
 
-var uChar = confirm("Would you like to include uppercae characters?");
-if (uChar) {
-    userInput.push(uChar)
+var upChar = confirm("Would you like to include uppercae characters?");
+if (upChar) {
+    userInput.push(...uChar)
 };
 
-var symbols = confirm("Would you like to include uppercase characters?");
-if (symbols) {
-    userInput.push(symbols)
+var syms = confirm("Would you like to include symbols characters?");
+if (syms) {
+    userInput.push(...spechar)
 };
 
-var numbers = confirm("Would you like to include numerical characters?");
-if (numbers) {
-    userInput.push(numbers)
+var numb = confirm("Would you like to include numerical characters?");
+if (numb) {
+    userInput.push(...numbs)
 };
 
 for (var i=0; i<length; i++) {
