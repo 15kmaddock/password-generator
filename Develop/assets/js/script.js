@@ -24,7 +24,7 @@ function writePassword() {
 
   var lChar = window.confirm("Would you like to include lowercase characters?");
   if (lChar) {
-    userInput.push(...lChar)
+    userInput.push(lChar)
   };
     
   var uChar = window.confirm("would you like to include upercase characters?");
