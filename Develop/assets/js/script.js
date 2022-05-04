@@ -1,31 +1,51 @@
 // Assignment code here
-// Array for characters
-const lchar = "qwertyuiopasdfghjklzxcvbnm";
-const uchar = "QWERTYUIOPASDFGHJKLZXCVBNM";
-const symbols = "!@#$%^&*_-+=";
-const numbers = "1234567890"
+var lChar = "qwertyuiopasdfghjkklzxcvbnm";
+var uChar = "QWERTYUIOPASDFGHJKLZXCVBNM";
+var symbols = "!@#$%^&*_-+=";
+var numbers = "1234567890";
+var userInput = [];
+var random = [];
 
-const lowercase = lchar
-const uppercase = uchar
-const charSymbols = symbols
-const charNumbers = numbers
-
-function generatePassword () {
-  var length = window.prompt
-}
-  
-
-
-const password = document.getElementById
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// length paramaters for 
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  
+  var length = prompt ("Select password length from 8-128 characters.");
+  if (length <=7 ) {
+    alert ("password length not sufficient");
+    return length();
+  }if (length >=129) {
+    alert("password length too long");
+    return length();
+  };
 
+  var lChar = window.confirm("Would you like to include lowercase characters?");
+  if (lChar) {
+    userInput.push(...lChar)
+  };
+    
+  var uChar = window.confirm("would you like to include upercase characters?");
+  if (uChar) {
+    userInput.push(...uChar)
+  };
+
+  var symbols = window.confirm("Would you like to include special characters?");
+  if (symbols) {
+    userInput.push(...symbols)
+  };
+
+  var numbers = window.confirm("would you like to include numbers?");
+  if (numbers) {
+    userInput.push(...numbers)
+  };
+
+  for (var i=0; i<length; i++) {
+    randomPass.push(userInput[Math.floor(Math.random() * userInput.length)])
+  }
+  var text = document.querySelector("click", writePassword)
   passwordText.value = password;
 
 }
