@@ -9,4 +9,9 @@ create a random password with differant criteria bason on your passworrd needed 
 * JavaScript
 
 ## link and Screenshot
+https://15kmaddock.github.io/password-generator/
+
+Develop\assets\screenshots\passworrd-genSC.png
+
+Develop\assets\screenshots\passworrd-genSC2.png
 
